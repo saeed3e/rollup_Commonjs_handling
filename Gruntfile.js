@@ -28,7 +28,8 @@ module.exports = function (grunt) {
             },
             layerReact:{
                 options: {
-                    format: "amd",
+                    moduleName: 'layerReact',
+                    format: "umd",
                     plugins: [
                         nodeResolve({
                             jsnext: true,

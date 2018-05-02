@@ -1,4 +1,8 @@
-define(function () { 'use strict';
+(function (global, factory) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+    typeof define === 'function' && define.amd ? define(factory) :
+    (global.layerReact = factory());
+}(this, (function () { 'use strict';
 
     function createCommonjsModule(fn, module) {
     	return module = { exports: {} }, fn(module, module.exports), module.exports;
@@ -3667,4 +3671,4 @@ function checkType(isRequired, props, propName, componentName, location, propFul
 
     return layerReact;
 
-});
+})));
